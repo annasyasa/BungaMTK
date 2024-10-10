@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Bunga</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Kalkulator</h1>
+        
+        <div class="calculator">
+            <h2>Bunga Tunggal</h2>
+            <label for="principal">Pokok (Rp):</label>
+            <input type="number" id="principal-single">
+            <label for="rate">Tingkat Bunga (%):</label>
+            <input type="number" id="rate-single" step="0.1">
+            <label for="time">Waktu (tahun):</label>
+            <input type="number" id="time-single">
+            <button onclick="calculateSimpleInterest()">Hitung Bunga Tunggal</button>
+            <p id="result-single"></p>
+        </div>
+        <div class="box">
+            <a href="Majemuk.html">Bunga Majemuk</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

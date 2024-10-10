@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Bunga</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Kalkulator Bunga</h1>
+
+        <div class="calculator">
+            <h2>Bunga Majemuk</h2>
+            <label for="principal">Pokok (Rp):</label>
+            <input type="number" id="principal-compound">
+            <label for="rate">Tingkat Bunga (%):</label>
+            <input type="number" id="rate-compound" step="0.1">
+            <label for="time">Waktu:</label>
+            <input type="number" id="time-compound">
+            <label for="frequency">Frekuensi Perhitungan:</label>
+            <select id="frequency">
+                <option value="1">Tahunan</option>
+                <option value="2">Semesteran</option>
+                <option value="4">Kuartalan</option>
+                <option value="12">Bulanan</option>
+            </select>
+            <button onclick="calculateCompoundInterest()">Hitung Bunga Majemuk</button>
+            <p id="result-compound"></p>
+        </div>
+        <div class="box">
+            <a href="Tunggal.html">Bunga Tunggal</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
